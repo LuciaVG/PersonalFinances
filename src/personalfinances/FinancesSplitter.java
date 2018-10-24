@@ -21,7 +21,7 @@ public class FinancesSplitter {
    
     }
     
-    public void Split(String delimeter, String[] rawLines){
+    public void split(String delimeter, String[] rawLines){
         
         int len = rawLines.length;
         

@@ -10,6 +10,13 @@ package personalfinances;
  * @author skullgsus
  */
 public class Calculator {
+    String[] stores;
+    Double[] expenses;
+    
+    public Calculator(String[] stores,Double[] expenses){
+        this.stores=stores;
+        this.expenses=expenses;
+    }
     
     public int getMin(){
         return (111);
