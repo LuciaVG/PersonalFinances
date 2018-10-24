@@ -18,9 +18,9 @@ public class Calculator {
         this.expenses=expenses;
     }
     
-    public int getMin(){
-		int res=expenses[0];
-		for(int i=0;i<expenses.length();i++){
+    public Double getMin(){
+		Double res=expenses[0];
+		for(int i=0;i<expenses.length;i++){
 			if (res>expenses[i]){
 				res=expenses[i];
 			}
@@ -28,9 +28,9 @@ public class Calculator {
         return (res);
     }
     
-    public int getMax(){
-        int res=expenses[0];
-		for(int i=0;i<expenses.length();i++){
+    public Double getMax(){
+        Double res=expenses[0];
+		for(int i=0;i<expenses.length;i++){
 			if (res<expenses[i]){
 				res=expenses[i];
 			}
@@ -38,13 +38,14 @@ public class Calculator {
         return (res);
     }
     
-    public int getAverage(){
-       	int sum=0;
-		for(int i=0;i<expenses.length();i++){
+    public Double getAverage(){
+       	Double sum=0.0;
+		for(int i=0;i<expenses.length;i++){
 			sum+=expenses[i];
 		}
-		int res=sum/expenses.length();
+		Double res=sum/expenses.length;
         return (res);
     }
+    
     
 }
