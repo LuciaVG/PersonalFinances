@@ -19,15 +19,32 @@ public class Calculator {
     }
     
     public int getMin(){
-        return (111);
+		int res=expenses[0];
+		for(int i=0;i<expenses.length();i++){
+			if (res>expenses[i]){
+				res=expenses[i];
+			}
+		}
+        return (res);
     }
     
     public int getMax(){
-        return (777);
+        int res=expenses[0];
+		for(int i=0;i<expenses.length();i++){
+			if (res<expenses[i]){
+				res=expenses[i];
+			}
+		}
+        return (res);
     }
     
     public int getAverage(){
-        return (33);
+       	int sum=0;
+		for(int i=0;i<expenses.length();i++){
+			sum+=expenses[i];
+		}
+		int res=sum/expenses.length();
+        return (res);
     }
     
 }
