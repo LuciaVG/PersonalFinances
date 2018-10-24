@@ -1,0 +1,4 @@
+purchases of 2018-10-24
+Min: ¥111
+Max: ¥777
+Average: ¥033

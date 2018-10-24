@@ -5,6 +5,8 @@
  */
 package personalfinances;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author bvlul
@@ -16,6 +18,20 @@ public class PersonalFinances {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Calculator calculations= new Calculator();
+        
+        Format mexForm = new MexicanFormat();
+        Format japForm = new JapaneseFormat();
+        
+        Report report = new DefaultReport();
+        
+        //String res= report.createReport(calculations, mexForm);
+        String res= report.createReport(calculations, japForm);
+        
+        //Writer writer = new WriteToConsole();
+        Writer writer = new WriteToFile();
+        writer.write(res);
+        
     }
     
 }
